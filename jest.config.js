@@ -1,5 +1,8 @@
+/* eslint-disable */
+
 module.exports = {
   testEnvironment: 'jest-environment-jsdom',
+  setupFilesAfterEnv: ['./tests/setup-env.js'],
   coverageThreshold: {
     global: {
       statements: 50,
@@ -16,4 +19,4 @@ module.exports = {
     '!**/node_modules/**',
     '!src/utils/**/*.{ts,tsx}',
   ],
-};
+}

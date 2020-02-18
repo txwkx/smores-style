@@ -10,13 +10,17 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:jest/recommended",
     "eslint-config-prettier"
   ],
-  "plugins": ["react-hooks"],
+  "plugins": ["jest", "react-hooks"],
   "rules": {
     "strict": ["error", "never"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "off"
+  },
+  "env": {
+    "jest/globals": true
   },
   "overrides": [
     {
